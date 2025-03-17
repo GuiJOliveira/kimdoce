@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="pt"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Kim Docê - Cardápio Online</title> <!-- Define o título da aba do navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo CSS externo -->
+</head>
+<body>
+    <!-- Barra lateral com o menu de navegação -->
+    <div class="sidebar">
+        <h1>Kim Docê</h1> <!-- Nome da empresa -->
+        <nav> <!-- Menu de navegação -->
+            <a onclick="mostrarSecao('sobre')">Sobre Nós</a> <!-- Link para a seção "Sobre Nós" -->
+            <a onclick="mostrarSecao('missoes')">Missões</a> <!-- Link para a seção "Missões" -->
+            <a onclick="mostrarSecao('cardapio')">Cardápio</a> <!-- Link para a seção "Cardápio" -->
+        </nav>
+    </div>
+
+    <!-- Seção "Sobre Nós" -->
+    <div class="content" id="sobre">
+        <h2>Sobre Nós</h2> <!-- Título da seção -->
+        <p>História da empresa Kim Docê...</p> <!-- Texto descritivo -->
+    </div>
+
+    <!-- Seção "Missões" -->
+    <div class="content" id="missoes">
+        <h2>Missões</h2> <!-- Título da seção -->
+        <p>Nosso objetivo é levar doçura para todos...</p> <!-- Texto descritivo -->
+    </div>
+
+    <!-- Seção "Cardápio" -->
+    <div class="content" id="cardapio">
+        <h2>Cardápio</h2> <!-- Título da seção -->
+        <div id="sabores"> <!-- Lista de sabores disponíveis -->
+            <div class="menu-item"><input type="checkbox" value="Churros"> Churros</div> 
+            <div class="menu-item"><input type="checkbox" value="Tradicional"> Tradicional</div>
+            <div class="menu-item"><input type="checkbox" value="Cereja"> Cereja</div>
+            <div class="menu-item"><input type="checkbox" value="Café"> Café</div>
+            <div class="menu-item"><input type="checkbox" value="Caipiroska"> Caipiroska</div>
+            <div class="menu-item"><input type="checkbox" value="Ninho com Nutella"> Ninho com Nutella</div>
+            <div class="menu-item"><input type="checkbox" value="Açaí"> Açaí</div>
+            <div class="menu-item"><input type="checkbox" value="Queijo com Goiabada"> Queijo com Goiabada</div>
+            <div class="menu-item"><input type="checkbox" value="Beijinho"> Beijinho</div>
+            <div class="menu-item"><input type="checkbox" value="Ferreiro Rocher"> Ferreiro Rocher</div>
+            <div class="menu-item"><input type="text" placeholder="Sabor extra do mês"></div> <!-- Campo para sabor extra -->
+            <div class="menu-item"><input type="text" placeholder="Sabor extra do mês"></div> <!-- Outro campo para sabor extra -->
+        </div>
+        <button class="pedido" onclick="finalizarPedido()">Finalizar Pedido</button> <!-- Botão para finalizar o pedido -->
+    </div>
+
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript externo -->
+</body>
+</html>
